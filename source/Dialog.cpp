@@ -305,11 +305,11 @@ void Dialog::DoCallback() const
 		try {
 			conv = std::stoi(input);
 		}
-		catch (std::out_of_range& oor)
+		catch(std::out_of_range &oor)
 		{
 			conv = INT_MAX;
 		}
-		catch (...)
+		catch(...)
 		{
 			conv = 0;
 		}
